@@ -1,0 +1,11 @@
+services:
+- name: Creación de ritmos
+- name: Mezcla
+- name: Mastering
+contacts:
+- media: Instagram
+  link: https://www.instagram.com/dimelo.efa/
+  icon: ri-instagram-line
+- media: Correo
+  link: mailto:dimelo.efa@gmail.com
+  icon: ri-mail-line

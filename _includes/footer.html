@@ -1,0 +1,35 @@
+<div class="bg-black py-12 text-sm">
+    <div class="max-w-screen-sm mx-auto grid grid-cols-3 justify-items-center">
+        <div>
+            <p class="text-base font-bold text-maximum-red">Navegación</p>
+            <ul class="mt-2">
+                {% for item in site.data.navigation %}
+                <li class="mb-1 last:mb-0"><a class="hover:text-liberty" href="{{ item.link }}">{{ item.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div>
+            <p class="text-base font-bold text-maximum-red">Servicios</p>
+            <ul class="mt-2">
+                {% for item in site.data.footer.services %}
+                <li class="mb-1 last:mb-0">{{ item.name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div>
+            <p class="text-base font-bold text-maximum-red">Contacto</p>
+            <ul class="mt-2">
+                {% for item in site.data.footer.contacts %}
+                <li class="mb-1 last:mb-0"><a class="hover:text-liberty" href="{{ item.link }}">
+                        <i class="{{ item.icon }}"></i> {{ item.media }}</a> </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bg-black py-4 text-sm text-center">
+    <div class="max-w-screen-sm mx-auto">
+        <p>Copyright © 2024 Dímelo EFA. Todos los derechos
+            reservados</p>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div id="{{ include.song }}" class="border border-white rounded-md p-6 text-center">
+    <p>{{ include.title }}</p>
+    <p class="text-xs" data-song-version>(después)</p>
+    <input type="range" min="0" max="100" value="0" class="w-full h-1.5 accent-maximum-red mt-2" step="5" />
+    <div class="flex justify-between mt-2">
+        {% include music_player_button.html song=include.song function="playSong" icon="ri-play-line" data="play-song"
+        %}
+        {% include music_player_button.html song=include.song function="stopSong" icon="ri-stop-line" data="stop-song"
+        %}
+        {% include music_player_button.html song=include.song function="swapSong" icon="ri-a-b" data="swap-song" %}
+    </div>
+</div>

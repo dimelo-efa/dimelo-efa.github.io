@@ -1,0 +1,14 @@
+<div class="bg-black py-2">
+    <div class="max-w-screen-sm mx-auto flex justify-between items-center">
+        <div>
+            <p class="font-parisienne text-2xl leading text-center">dímelo</p>
+            <p class="font-gloock text-5xl -mt-3">EFA</p>
+        </div>
+        <div>
+            {% for item in site.data.navigation %}
+            <a href="{{ item.link }}" class=" px-4 py-2 hover:bg-white hover:text-black rounded-md">{{
+                item.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
