@@ -1,14 +1,22 @@
-<div class="bg-black py-2">
-    <div class="max-w-screen-sm mx-auto flex justify-between items-center">
-        <div>
-            <p class="font-parisienne text-2xl leading text-center">dímelo</p>
-            <p class="font-gloock text-5xl -mt-3">EFA</p>
-        </div>
-        <div>
+<div class="flex justify-between items-center relative py-4" id="navbar">
+    <div>
+        <p class="font-parisienne text-2xl leading text-center">dímelo</p>
+        <p class="font-gloock text-5xl -mt-3">EFA</p>
+    </div>
+    <div class="hidden md:block">
+        {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" class=" px-4 py-2 hover:bg-liberty rounded-md">{{
+            item.name }}</a>
+        {% endfor %}
+    </div>
+    <button class="md:hidden px-4 py-2 hover:bg-white hover:text-black rounded-md z-10" id="menu"
+        onclick="showNavbarDropdown()"><i class="ri-menu-line"></i></button>
+    <div class="hidden absolute bg-black top-full right-0 z-10 rounded-md border" id="navbar-dropdown">
+        <ul>
             {% for item in site.data.navigation %}
-            <a href="{{ item.link }}" class=" px-4 py-2 hover:bg-white hover:text-black rounded-md">{{
-                item.name }}</a>
+            <li class="hover:bg-white hover:text-black"><a href="{{ item.link }}" class=" py-4 px-8 block">{{
+                    item.name }}</a></li>
             {% endfor %}
-        </div>
+        </ul>
     </div>
 </div>

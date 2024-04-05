@@ -2,52 +2,45 @@
 layout: default
 title: Dímelo EFA
 ---
-<div class="pt-4 text-center bg-black" id="hero">
-    <div class="max-w-screen-sm mx-auto">
-        <h1 class="font-rozha-one text-5xl text-maximum-red">Creo ritmos con poder</h1>
-        <p class="mb-4">Explora conmigo sonidos que pocos se atreven a experimentar
-        </p>
-        <div class="h-48 bg-hero bg-no-repeat bg-[100%_30%] bg-[length:100%]"
-            style="filter: brightness(0) saturate(100%) invert(35%) sepia(4%) saturate(6968%) hue-rotate(197deg) brightness(94%) contrast(87%);">
-        </div>
+<div class="pt-4 text-center" id="hero">
+    <h1 class="font-rozha-one text-5xl text-maximum-red">Creo ritmos con poder</h1>
+    <p class="mb-4">Explora conmigo sonidos que pocos se atreven a experimentar
+    </p>
+    <div class="h-48 bg-hero bg-no-repeat bg-[100%_30%] bg-[length:100%] z-0"
+        style="filter: brightness(0) saturate(100%) invert(35%) sepia(4%) saturate(6968%) hue-rotate(197deg) brightness(94%) contrast(87%);">
     </div>
 </div>
-<div class="bg-black pt-12" id="artistic-philosophy">
-    <div class="max-w-screen-sm mx-auto">
-        <h2 class="font-rozha-one text-5xl text-center mb-4 text-maximum-red">Filosofía Artística</h2>
-        <p>Con el paso de los años, he llegado a comprender que quienes
-            trabajamos en este arte tendemos a reflejar
-            extensiones de nosotros mismos en nuestras obras.</p>
-        <p>Por esta razón, mis ritmos suelen ser oscuros,
-            melancólicos e incluso experimentales. Si sientes que esto también te sucede a ti, es posible que tú y yo
-            tengamos más en común de lo que imaginas.</p>
+<div class="pt-12" id="artistic-philosophy">
+    <h2 class="font-rozha-one text-5xl text-center mb-4 text-maximum-red">Filosofía Artística</h2>
+    <p>Con el paso de los años, he llegado a comprender que quienes
+        trabajamos en este arte tendemos a reflejar
+        extensiones de nosotros mismos en nuestras obras.</p>
+    <p class="mt-4">Por esta razón, mis ritmos suelen ser oscuros,
+        melancólicos e incluso experimentales. Si sientes que esto también te sucede a ti, es posible que tú y yo
+        tengamos más en común de lo que imaginas.</p>
+</div>
+<div class="pt-12" id="gallery">
+    <h2 class="font-rozha-one text-5xl text-center mb-4 text-maximum-red">Galería</h2>
+    <p>
+        En todas las canciones enlistadas, desarrollé los ritmos,
+        participé
+        activamente en la creación y/o estructuración de las letras, y realicé las mezclas y masterizaciones. Puedes
+        comparar los resultados a través del botón <i class="ri-a-b"></i>.
+    </p>
+    <!-- grid grid-cols-1 gap-4 px-12 mt-12 -->
+    <div class="flex flex-wrap gap-4 justify-center mt-12">
+        {% include music_player_widget.html song="song_0" title="Dile a tu ma'i" %}
+        {% include music_player_widget.html song="song_1" title="Noche de delito" %}
     </div>
 </div>
-<div class="pt-12 bg-black" id="gallery">
-    <div class="max-w-screen-sm mx-auto">
-        <h2 class="font-rozha-one text-5xl text-center mb-4 text-maximum-red">Galería</h2>
-        <p>
-            En todas las canciones enlistadas, desarrollé los ritmos,
-            participé
-            activamente en la creación y/o estructuración de las letras, y realicé las mezclas y masterizaciones. Puedes
-            comparar los resultados a través del botón <i class="ri-a-b"></i>.
-        </p>
-        <div class="grid grid-cols-2 gap-4 px-12 mt-4">
-            {% include music_player_widget.html song="song_0" title="Dile a tu ma'i" %}
-            {% include music_player_widget.html song="song_1" title="Noche de delito" %}
-        </div>
-    </div>
-</div>
-<div class="bg-black pt-12" id="contact">
-    <div class="max-w-screen-sm mx-auto">
-        <h2 class="font-rozha-one text-5xl text-center mb-4 text-maximum-red">Contacto</h2>
-        <p>Si te interesa mi trabajo y quieres desarrollar tu idea de
-            principio a
-            fin (esto es, ritmos, grabación, mezcla y masterización), no dudes en hablarme por Instagram como
-            <a href="https://www.instagram.com/dimelo.efa/"><b>@dimelo.efa</b></a>.
-        </p>
-        <div class="h-48 bg-contact bg-no-repeat bg-[100%_5%] bg-[length:70%]"
-            style="filter: brightness(0) saturate(100%) invert(35%) sepia(4%) saturate(6968%) hue-rotate(197deg) brightness(94%) contrast(87%);">
-        </div>
+<div class="pt-12" id="contact">
+    <h2 class="font-rozha-one text-5xl text-center mb-4 text-maximum-red">Contacto</h2>
+    <p class="mb-4">Si te interesa mi trabajo y quieres desarrollar tu idea de
+        principio a
+        fin (esto es, ritmos, grabación, mezcla y masterización), no dudes en hablarme por Instagram como
+        <a href="https://www.instagram.com/dimelo.efa/"><b>@dimelo.efa</b></a>.
+    </p>
+    <div class="h-48 bg-contact bg-no-repeat bg-[100%_5%] bg-[length:70%]"
+        style="filter: brightness(0) saturate(100%) invert(35%) sepia(4%) saturate(6968%) hue-rotate(197deg) brightness(94%) contrast(87%);">
     </div>
 </div>

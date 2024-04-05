@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="text-[22px] lg:text-[16px]">
 
 <head>
     <meta charset="utf-8">
@@ -32,58 +32,67 @@
     <link rel="stylesheet" href="http://localhost:4000/assets/css/styles.css">
     <script type="text/javascript" src="/assets/js/tailwind_config.js"></script>
     <script type="text/javascript" src="/assets/js/music_player.js"></script>
+    <script type="text/javascript" src="/assets/js/navbar.js"></script>
 </head>
 
 <body class="font-libre-baskerville bg-black text-white">
-    <div class="bg-black py-2">
-    <div class="max-w-screen-sm mx-auto flex justify-between items-center">
-        <div>
-            <p class="font-parisienne text-2xl leading text-center">dímelo</p>
-            <p class="font-gloock text-5xl -mt-3">EFA</p>
-        </div>
-        <div>
+    <div class="max-w-screen-md lg:max-w-screen-sm mx-auto">
+        <div class="flex justify-between items-center relative py-4" id="navbar">
+    <div>
+        <p class="font-parisienne text-2xl leading text-center">dímelo</p>
+        <p class="font-gloock text-5xl -mt-3">EFA</p>
+    </div>
+    <div class="hidden md:block">
+        
+        <a href="#artistic-philosophy" class=" px-4 py-2 hover:bg-liberty rounded-md">Filosofía Artística</a>
+        
+        <a href="#gallery" class=" px-4 py-2 hover:bg-liberty rounded-md">Galería</a>
+        
+        <a href="#contact" class=" px-4 py-2 hover:bg-liberty rounded-md">Contacto</a>
+        
+    </div>
+    <button class="md:hidden px-4 py-2 hover:bg-white hover:text-black rounded-md z-10" id="menu"
+        onclick="showNavbarDropdown()"><i class="ri-menu-line"></i></button>
+    <div class="hidden absolute bg-black top-full right-0 z-10 rounded-md border" id="navbar-dropdown">
+        <ul>
             
-            <a href="#artistic-philosophy" class=" px-4 py-2 hover:bg-white hover:text-black rounded-md">Filosofía Artística</a>
+            <li class="hover:bg-white hover:text-black"><a href="#artistic-philosophy" class=" py-4 px-8 block">Filosofía Artística</a></li>
             
-            <a href="#gallery" class=" px-4 py-2 hover:bg-white hover:text-black rounded-md">Galería</a>
+            <li class="hover:bg-white hover:text-black"><a href="#gallery" class=" py-4 px-8 block">Galería</a></li>
             
-            <a href="#contact" class=" px-4 py-2 hover:bg-white hover:text-black rounded-md">Contacto</a>
+            <li class="hover:bg-white hover:text-black"><a href="#contact" class=" py-4 px-8 block">Contacto</a></li>
             
-        </div>
+        </ul>
     </div>
 </div>
-    <div class="pt-4 text-center bg-black" id="hero">
-    <div class="max-w-screen-sm mx-auto">
-        <h1 class="font-rozha-one text-5xl text-maximum-red">Creo ritmos con poder</h1>
-        <p class="mb-4">Explora conmigo sonidos que pocos se atreven a experimentar
-        </p>
-        <div class="h-48 bg-hero bg-no-repeat bg-[100%_30%] bg-[length:100%]"
-            style="filter: brightness(0) saturate(100%) invert(35%) sepia(4%) saturate(6968%) hue-rotate(197deg) brightness(94%) contrast(87%);">
-        </div>
+        <div class="pt-4 text-center" id="hero">
+    <h1 class="font-rozha-one text-5xl text-maximum-red">Creo ritmos con poder</h1>
+    <p class="mb-4">Explora conmigo sonidos que pocos se atreven a experimentar
+    </p>
+    <div class="h-48 bg-hero bg-no-repeat bg-[100%_30%] bg-[length:100%] z-0"
+        style="filter: brightness(0) saturate(100%) invert(35%) sepia(4%) saturate(6968%) hue-rotate(197deg) brightness(94%) contrast(87%);">
     </div>
 </div>
-<div class="bg-black pt-12" id="artistic-philosophy">
-    <div class="max-w-screen-sm mx-auto">
-        <h2 class="font-rozha-one text-5xl text-center mb-4 text-maximum-red">Filosofía Artística</h2>
-        <p>Con el paso de los años, he llegado a comprender que quienes
-            trabajamos en este arte tendemos a reflejar
-            extensiones de nosotros mismos en nuestras obras.</p>
-        <p>Por esta razón, mis ritmos suelen ser oscuros,
-            melancólicos e incluso experimentales. Si sientes que esto también te sucede a ti, es posible que tú y yo
-            tengamos más en común de lo que imaginas.</p>
-    </div>
+<div class="pt-12" id="artistic-philosophy">
+    <h2 class="font-rozha-one text-5xl text-center mb-4 text-maximum-red">Filosofía Artística</h2>
+    <p>Con el paso de los años, he llegado a comprender que quienes
+        trabajamos en este arte tendemos a reflejar
+        extensiones de nosotros mismos en nuestras obras.</p>
+    <p class="mt-4">Por esta razón, mis ritmos suelen ser oscuros,
+        melancólicos e incluso experimentales. Si sientes que esto también te sucede a ti, es posible que tú y yo
+        tengamos más en común de lo que imaginas.</p>
 </div>
-<div class="pt-12 bg-black" id="gallery">
-    <div class="max-w-screen-sm mx-auto">
-        <h2 class="font-rozha-one text-5xl text-center mb-4 text-maximum-red">Galería</h2>
-        <p>
-            En todas las canciones enlistadas, desarrollé los ritmos,
-            participé
-            activamente en la creación y/o estructuración de las letras, y realicé las mezclas y masterizaciones. Puedes
-            comparar los resultados a través del botón <i class="ri-a-b"></i>.
-        </p>
-        <div class="grid grid-cols-2 gap-4 px-12 mt-4">
-            <div id="song_0" class="border border-white rounded-md p-6 text-center">
+<div class="pt-12" id="gallery">
+    <h2 class="font-rozha-one text-5xl text-center mb-4 text-maximum-red">Galería</h2>
+    <p>
+        En todas las canciones enlistadas, desarrollé los ritmos,
+        participé
+        activamente en la creación y/o estructuración de las letras, y realicé las mezclas y masterizaciones. Puedes
+        comparar los resultados a través del botón <i class="ri-a-b"></i>.
+    </p>
+    <!-- grid grid-cols-1 gap-4 px-12 mt-12 -->
+    <div class="flex flex-wrap gap-4 justify-center mt-12">
+        <div id="song_0" class="border border-white rounded-md p-6 text-center w-64">
     <p>Dile a tu ma'i</p>
     <p class="text-xs" data-song-version>(después)</p>
     <input type="range" min="0" max="100" value="0" class="w-full h-1.5 accent-maximum-red mt-2" step="5" />
@@ -102,7 +111,7 @@
 </button>
     </div>
 </div>
-            <div id="song_1" class="border border-white rounded-md p-6 text-center">
+        <div id="song_1" class="border border-white rounded-md p-6 text-center w-64">
     <p>Noche de delito</p>
     <p class="text-xs" data-song-version>(después)</p>
     <input type="range" min="0" max="100" value="0" class="w-full h-1.5 accent-maximum-red mt-2" step="5" />
@@ -121,23 +130,20 @@
 </button>
     </div>
 </div>
-        </div>
     </div>
 </div>
-<div class="bg-black pt-12" id="contact">
-    <div class="max-w-screen-sm mx-auto">
-        <h2 class="font-rozha-one text-5xl text-center mb-4 text-maximum-red">Contacto</h2>
-        <p>Si te interesa mi trabajo y quieres desarrollar tu idea de
-            principio a
-            fin (esto es, ritmos, grabación, mezcla y masterización), no dudes en hablarme por Instagram como
-            <a href="https://www.instagram.com/dimelo.efa/"><b>@dimelo.efa</b></a>.
-        </p>
-        <div class="h-48 bg-contact bg-no-repeat bg-[100%_5%] bg-[length:70%]"
-            style="filter: brightness(0) saturate(100%) invert(35%) sepia(4%) saturate(6968%) hue-rotate(197deg) brightness(94%) contrast(87%);">
-        </div>
+<div class="pt-12" id="contact">
+    <h2 class="font-rozha-one text-5xl text-center mb-4 text-maximum-red">Contacto</h2>
+    <p class="mb-4">Si te interesa mi trabajo y quieres desarrollar tu idea de
+        principio a
+        fin (esto es, ritmos, grabación, mezcla y masterización), no dudes en hablarme por Instagram como
+        <a href="https://www.instagram.com/dimelo.efa/"><b>@dimelo.efa</b></a>.
+    </p>
+    <div class="h-48 bg-contact bg-no-repeat bg-[100%_5%] bg-[length:70%]"
+        style="filter: brightness(0) saturate(100%) invert(35%) sepia(4%) saturate(6968%) hue-rotate(197deg) brightness(94%) contrast(87%);">
     </div>
 </div>
-    <div class="bg-black py-12 text-sm">
+        <div class="bg-black py-12 text-sm">
     <div class="max-w-screen-sm mx-auto grid grid-cols-3 justify-items-center">
         <div>
             <p class="text-base font-bold text-maximum-red">Navegación</p>
@@ -183,6 +189,7 @@
             reservados</p>
     </div>
 </div>
+    </div>
 </body>
 
 </html>

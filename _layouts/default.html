@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="text-[22px] lg:text-[16px]">
 
 <head>
     <meta charset="utf-8">
@@ -32,12 +32,15 @@
     <link rel="stylesheet" href="{{ base.url | prepend: site.url }}/assets/css/styles.css">
     <script type="text/javascript" src="{{ base.url }}/assets/js/tailwind_config.js"></script>
     <script type="text/javascript" src="{{ base.url }}/assets/js/music_player.js"></script>
+    <script type="text/javascript" src="{{ base.url }}/assets/js/navbar.js"></script>
 </head>
 
 <body class="font-libre-baskerville bg-black text-white">
-    {% include navigation.html %}
-    {{ content }}
-    {% include footer.html %}
+    <div class="max-w-screen-md lg:max-w-screen-sm mx-auto">
+        {% include navigation.html %}
+        {{ content }}
+        {% include footer.html %}
+    </div>
 </body>
 
 </html>
