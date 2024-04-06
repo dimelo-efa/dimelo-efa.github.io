@@ -9,6 +9,10 @@ var songs = {
     "song_1": {
         "before": new Howl({ src: ["/assets/sounds/song_1_before.mp3"], volume: 0.0 }),
         "after": new Howl({ src: ["/assets/sounds/song_1_after.mp3"], volume: 1.0 })
+    },
+    "song_2": {
+        "before": new Howl({ src: ["/assets/sounds/song_2_before.mp3"], volume: 0.0 }),
+        "after": new Howl({ src: ["/assets/sounds/song_2_after.mp3"], volume: 1.0 })
     }
 }
 

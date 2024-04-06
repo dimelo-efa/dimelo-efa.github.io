@@ -129,6 +129,25 @@
 </button>
     </div>
 </div>
+        <div id="song_2" class="border border-white rounded-md p-6 text-center w-64">
+    <p>Dándonos</p>
+    <p class="text-xs" data-song-version>(después)</p>
+    <input type="range" min="0" max="100" value="0" class="w-full h-1.5 accent-maximum-red mt-2" step="5" />
+    <div class="flex justify-between mt-2">
+        <button onclick="playSong('song_2')" data-play-song
+    class="hover:bg-slate-800 active:bg-white active:text-black w-16 border border-white rounded ml-1 first:ml-0 flex justify-center items-center">
+    <i class="ri-play-line"></i>
+</button>
+        <button onclick="stopSong('song_2')" data-stop-song
+    class="hover:bg-slate-800 active:bg-white active:text-black w-16 border border-white rounded ml-1 first:ml-0 flex justify-center items-center">
+    <i class="ri-stop-line"></i>
+</button>
+        <button onclick="swapSong('song_2')" data-swap-song
+    class="hover:bg-slate-800 active:bg-white active:text-black w-16 border border-white rounded ml-1 first:ml-0 flex justify-center items-center">
+    <i class="ri-a-b"></i>
+</button>
+    </div>
+</div>
     </div>
 </div>
 <div class="pt-12" id="contact">
